@@ -5,8 +5,8 @@ metadata:
 spec:
   ports:
   - name: http
-    port: 80
-    nodePort: 8888
+    port: 8888
+    nodePort: 30001
   selector:
     app: app-pythontest
   type: NodePort
@@ -39,4 +39,4 @@ spec:
           imagePullPolicy: Always
           image: $DOCKERIMAGE
           ports:
-            - containerPort: 80
+            - containerPort: 8888

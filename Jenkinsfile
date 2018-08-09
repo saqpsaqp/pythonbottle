@@ -44,7 +44,7 @@ pipeline {
             stage ("Despleganding contenedor...")
             {
                 steps {
-                    sh "${kube} apply -f /tmp/python.yaml"
+                    sh "${kube} apply -f /tmp/pythontest.yaml"
                 }
             }
         }

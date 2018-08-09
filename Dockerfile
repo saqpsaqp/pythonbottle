@@ -7,4 +7,4 @@ ADD . /app
 RUN pip3 install -r /app/requirements.txt
 WORKDIR /app
 CMD cd /app
-CMD ["run.py"]
+CMD ["uwsgi","--yaml","/app/uwsgi.yaml"]

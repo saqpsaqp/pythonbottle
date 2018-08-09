@@ -35,7 +35,7 @@ spec:
       imagePullSecrets:
       - name: docker-registry
       containers:
-        - name: nginxtest
+        - name: pythontest
           imagePullPolicy: Always
           image: $DOCKERIMAGE
           ports:

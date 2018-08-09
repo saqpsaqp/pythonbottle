@@ -1,9 +1,13 @@
 from bottle import Bottle
 
-aplicacion=Bottle()
+def loadapp ():
+    aplicacion=Bottle()
+    @aplicacion.get("/")
+    def mostrar():
+        return "tales y tales"
 
-@aplicacion.get("/")
-def mostrar():
-    return "tales y tales"
+    return aplicacion
 
-aplicacion.run(port=8888)
+aplicacion=loadapp()
+
+#aplicacion.run(port=8888)

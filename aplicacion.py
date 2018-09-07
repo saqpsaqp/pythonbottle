@@ -4,7 +4,7 @@ def loadapp ():
     aplicacion=Bottle()
     @aplicacion.get("/")
     def mostrar():
-        return "tales y tales"
+        return "What's up Bro?"
 
     return aplicacion
 

@@ -33,7 +33,7 @@ spec:
         app: app-pythontest
     spec:
       imagePullSecrets:
-      - name: docker-registry
+      - name: regcred
       containers:
         - name: pythontest
           imagePullPolicy: Always

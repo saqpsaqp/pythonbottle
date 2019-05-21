@@ -7,7 +7,7 @@ pipeline {
         environment {
         docker      = "docker -H tcp://127.0.0.1:2375"
         kube        = "/usr/bin/kubectl"
-        image       = "duvanballen/pythontest"
+        image       = "saqpsaqp/pythontest"
         commfile    = "/tmp/commit-file"
         }
 
